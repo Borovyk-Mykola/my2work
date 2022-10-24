@@ -13,38 +13,33 @@ body {
     font-weight: 400;
     letter-spacing: 0.03em;
     font-size: 14px;
-    line-height: 1.71;
 }
     /* Лого */
 .studio {
     color: #000000;
     font-family: raleway, sans-serif;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
+    text-decoration: none;
 }
 
 .studio-footer {
     color: var(--secondary-wite-color);
     font-family: raleway, sans-serif;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
-}
-
-span, .nav-link-current {
-    color: var(--accent-color);
-}
-    /*Посилання*/
-.nav-link:hover, .link:hover, .nav-link:focus, .link:focus, address a:focus, address a:hover {
-    color: var(--accent-color);
-}
-
-a {
     text-decoration: none;
 }
 
-ul {
+.span-logo, .nav-link-current {
+    color: var(--accent-color);
+}
+    /*Посилання*/
+.nav-link:hover, .link:hover, .nav-link:focus, .link:focus, .footer-address a:focus, .footer-address a:hover {
+    color: var(--accent-color);
+}
+
+.ul {
     list-style: none;
 }
     /* Навігація */
@@ -53,6 +48,7 @@ ul {
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .link {
@@ -60,12 +56,14 @@ ul {
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
     /* Герой */
-h1 {
+.main-title {
     color: var(--secondary-wite-color);
     font-weight: 900;
     font-size: 44px;
+    text-transform: uppercase;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
@@ -76,7 +74,6 @@ h1 {
     background-color: var(--accent-color);
     color: var(--secondary-wite-color);
     cursor: pointer;
-    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -84,14 +81,12 @@ h1 {
     /* Інструменти*/
 .tools-title {
     color: var(--primery-text-color);
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
 }
 
-h2 {
+.secondary-title {
     color: var(--primery-text-color);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 }
@@ -103,26 +98,33 @@ h2 {
     line-height: 1.17;
 }
     /*Футер*/
-footer {
+.footer {
     background-color: #2F303A;
 }
 
-address a {
-
+.footer-address a {
     color: rgba(256, 256, 256, 0.6);
     line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
 }
 
-.address-link {
+.footer-address .address-link {
     color: var(--secondary-wite-color);
+    text-decoration: none;
 }
     /* Фільтр портфоліо*/
-button {
+.button {
     cursor: pointer;
-
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
 }
 
-button:hover, button:focus {
+.button:hover, .button:focus {
     color: var(--secondary-wite-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
@@ -130,7 +132,6 @@ button:hover, button:focus {
 
 .portfolio-title {
     color: var(--primery-text-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -139,4 +140,8 @@ button:hover, button:focus {
 .portfolio-text {
     font-size: 16px;
     line-height: 1.88;
+}
+
+.nav-link-current {
+    text-decoration: none;
 }
