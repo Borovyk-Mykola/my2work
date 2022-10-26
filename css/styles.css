@@ -14,6 +14,19 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
 }
+
+h1, h2, h3, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
     /* Лого */
 .studio {
     color: #000000;
@@ -21,6 +34,8 @@ body {
     font-size: 26px;
     line-height: 1.17;
     text-decoration: none;
+    display: inline-block;
+    margin-right: 93px;
 }
 
 .studio-footer {
@@ -29,6 +44,8 @@ body {
     font-size: 26px;
     line-height: 1.17;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .span-logo, .nav-link-current {
@@ -49,6 +66,17 @@ body {
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .link {
@@ -58,6 +86,26 @@ body {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+.header {
+    display: flex;
+    margin-left: auto;
+}
+
+.header li:not(:last-child){
+    margin-right: 50px;
+}
+
+.container nav{
+    display: flex;
+    align-items: center;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+}
+
     /* Герой */
 .main-title {
     color: var(--secondary-wite-color);
@@ -66,8 +114,6 @@ body {
     text-transform: uppercase;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
-    background-color: #2F303A;
 }
 
 .main-button {
@@ -78,18 +124,56 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    margin-top: 30px;
+    padding: 10px 32px;
+}
+
+.main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+    text-align: center;
 }
     /* Інструменти*/
 .tools-title {
     color: var(--primery-text-color);
     font-size: 14px;
     line-height: 1.17;
+    margin-bottom: 10px;
 }
 
 .secondary-title {
     color: var(--primery-text-color);
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.li-tools {
+    width: 270px;
+}
+.li-tools:not(:last-child){
+    margin-right: 30px;
+}
+    /*Роботи*/
+.works {
+    display: flex;
+    align-items: center;
+}
+
+.works li:not(:last-child) {
+    margin-right: 30px;
 }
     /*Команда*/
 .team-title {
@@ -97,10 +181,32 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+}
+
+.team li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team li {
+    background-color: var(--secondary-wite-color);
 }
     /*Футер*/
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-address a {
@@ -108,12 +214,15 @@ body {
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
+    display: inline-block;
+    margin-bottom: 9px;
 }
 
 .footer-address .address-link {
     color: var(--secondary-wite-color);
     text-decoration: none;
 }
+
     /* Фільтр портфоліо*/
 .button {
     cursor: pointer;
