@@ -294,6 +294,7 @@ header .container{
 .portfolio li {
     margin-bottom: 30px;
     margin-right: 30px;
+    border: 1px solid #EEEEEE
 }
 .portfolio li:nth-child(3n) {
     margin-right: 0px;
